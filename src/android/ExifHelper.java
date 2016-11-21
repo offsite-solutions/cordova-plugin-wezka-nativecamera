@@ -6,9 +6,7 @@
        to you under the Apache License, Version 2.0 (the
        "License"); you may not use this file except in compliance
        with the License.  You may obtain a copy of the License at
-
          http://www.apache.org/licenses/LICENSE-2.0
-
        Unless required by applicable law or agreed to in writing,
        software distributed under the License is distributed on an
        "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -163,5 +161,24 @@ public class ExifHelper {
         this.outFile.saveAttributes();
     }
 
+    public int getOrientation() {
+        int o = Integer.parseInt(this.orientation);
+
+        if (o == ExifInterface.ORIENTATION_NORMAL) {
+            return 0;
+        } else if (o == ExifInterface.ORIENTATION_ROTATE_90) {
+            return 90;
+        } else if (o == ExifInterface.ORIENTATION_ROTATE_180) {
+            return 180;
+        } else if (o == ExifInterface.ORIENTATION_ROTATE_270) {
+            return 270;
+        } else {
+            return 0;
+        }
+    }
+
+    public void resetOrientation() {
+        this.orientation = "" + ExifInterface.ORIENTATION_NORMAL;
+    }
     
 }
