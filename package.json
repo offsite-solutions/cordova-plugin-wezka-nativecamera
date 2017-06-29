@@ -1,0 +1,40 @@
+{
+  "name": "cordova-plugin-wezka-nativecamera",
+  "version": "0.1.2",
+  "description": "Camera plugin that does not push the application to the background",
+  "cordova": {
+    "id": "cordova-plugin-wezka-nativecamera",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/offsite-solutions/cordova-plugin-wezka-nativecamera"
+  },
+  "keywords": [
+    "camera",
+    "foreground-camera",
+    "nightstomp",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova-android",
+      "version": ">=5.1.0"
+    },
+    {
+      "name": "cordova-ios",
+      "version": ">=4.0.0"
+    }
+  ],
+  "author": "Wezka",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/offsite-solutions/cordova-plugin-wezka-nativecamera/issues"
+  },
+  "homepage": "https://github.com/offsite-solutions/cordova-plugin-wezka-nativecamera#readme"
+}
